@@ -20,7 +20,7 @@ from app import app
 df = pd.read_csv("cleaned_customer_shopping_data.csv")
 
 #Defining the layout with graphs and dropdowns
-layout = html.Div([
+app.layout = html.Div([
     html.H4('Analysis of customer shopping data'),
     dcc.Graph(id="graph"),
     html.P("Categories:"),
