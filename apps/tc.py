@@ -16,7 +16,7 @@ from app import app
 df = pd.read_csv("cleaned_customer_shopping_data.csv")
 
 # define layout
-layout = html.Div([
+app.layout = html.Div([
     html.H1('Shopping Data Table'),
     dcc.Graph(id='data-table', figure={
         'data': [
