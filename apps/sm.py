@@ -20,7 +20,7 @@ df = pd.read_csv("cleaned_customer_shopping_data.csv")
 
 
 # Define the app layout
-layout = html.Div([
+app.layout = html.Div([
     html.H1("Total Revenue Across Shopping Malls"),
     dcc.Dropdown(
         id="mall-dropdown",
